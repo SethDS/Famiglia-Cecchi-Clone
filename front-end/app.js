@@ -1,9 +1,10 @@
 angular.module('myApp', ['ui.router']).config(function($stateProvider, $urlRouterProvider){
 
-    $urlRouterProdider.otherwise('/home');
+    $urlRouterProvider.otherwise('/home');
 
     $stateProvider
-    .state('home', {
+
+        .state('home', {
         url: '/home',
         templateUrl: './views/home.html',
         controller: 'mainCtrl'

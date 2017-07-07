@@ -1,7 +1,12 @@
+body{
+    margin: 0;
+}
+
 /*This is the mobile view stylesheet*/
 
 .main-content{
     display: flex;
+    flex-direction: column;
 }
 
 .main-section{
