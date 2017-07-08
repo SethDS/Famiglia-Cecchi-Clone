@@ -17,9 +17,31 @@ body{
 .box{
     height: 25%;
     width: 20%;
-    background-color: black;
-    opacity: 0.02;
+    background: linear-gradient(to right, rgba(120,120,120,0.01), rgba(120,120,120,0.2));
+    opacity: 0.6;
     transform: matrix(1, 0, 0, 1, 0, 0);
+    animation-name: boxes;
+    animation-delay: 4s;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+
+
+@keyframes boxes {
+    0% {opacity: 0.012637;}
+    5% {opacity: 0.0234322;}
+    10% {opacity: 0.03213;}
+    15% {opacity: 0.0432123;}
+    20% {opacity: 0.0523124;}
+    25% {opacity: 0.0623123;}
+    30% {opacity: 0.071234;}
+    35% {opacity: 0.0822412;}
+    40% {opacity: 0.091231;}
+    45% {opacity: 0.1;}
+    50% {opacity: 0.199;}
+    75% {opacity: 0.7;}
+    100% {opacity: 0.01231;}
 }
 
 
@@ -44,7 +66,7 @@ position: absolute;
 }
 .hero-nav {
     position: absolute;
-    top: 50px;
+    top: 0;
     left: 0;
     width: 100%;
     height: 8%;
@@ -53,7 +75,7 @@ position: absolute;
 }
 .hero-nav-menu {
     position: absolute;
-    bottom: 0;
+    bottom: -7px;
     left: 10.5%;
     color: white;
     width: 5%;
@@ -64,13 +86,13 @@ position: absolute;
     align-items: center;
 }
 .hamburger {
-    width: 75px;
-    height: 3px;
+    width: 27px;
+    height: 1px;
     background-color: white;
-    margin-top: 20px;
+    margin-top: 6px;
 }
 #hamburger-bottom {
-    width: 50px;
+    width: 17px;
 }
 .hero-menu-nav-menu {
     display: none;
@@ -80,7 +102,7 @@ position: absolute;
     position: absolute;
     left: 50%;
     transform: translate(-46%);
-    bottom: 27px;
+    bottom: 0;
     color: white;
 }
 #logo-svg{
@@ -97,10 +119,10 @@ position: absolute;
 }
 .hero-nav-language p {
     position: absolute;
-    bottom: 0;
+    bottom: 3px;
 
     font-family: 'Merriweather', serif;
-    font-size: 40px;
+    font-size: 15px;
     text-transform: uppercase;
     color: #aaaaaa;
 }
@@ -111,14 +133,23 @@ position: absolute;
     transform: translate(-50%, -50%);
     color: white;
     z-index: 3;
-    width: 100%;
+    width: 97%;
 
     display: flex;
     align-items: center;
     flex-direction: column;
     font-family: 'Merriweather', serif;
-    font-size: 78px;
+    font-size: 50px;
     text-transform: uppercase;
+}
+.hero-title p {
+    margin: 0;
+}
+.most-unforgettable {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    white-space: pre;
 }
 #letter-one {
     color: #d38d73;
